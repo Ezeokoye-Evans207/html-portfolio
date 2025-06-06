@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Segoe UI", Roboto, sans-serif;
+    background-color: white;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .login-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .login-box {
+    background-color: white;
+    padding: 40px 30px;
+    max-width: 380px;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .logo {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #000;
+  }
+  
+  form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid grey;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    cursor: pointer;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 6px;
+    font-size: 15px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+  
+  .or-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    color: #888;
+  }
+  
+  .or-divider::before,
+  .or-divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #444;
+    margin: 0 10px;
+  }
+  
+  button.google-btn,
+  button.apple-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border-radius: 6px;
+    border: 1px solid #555;
+    background-color: white;
+    color: #333;
+    font-size: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  button.google-btn i,
+  button.apple-btn i {
+    margin-right: 10px;
+  }
+  
+  .links {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .links a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .links span {
+    margin: 0 5px;
+  }
+  
+body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: #000000;
+      color: #ffffff;
+    }
+  }
+  

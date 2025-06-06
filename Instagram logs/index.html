@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instagram</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div>
+    <div class="container">
+      <div class="logo">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+      </div>
+      <form>
+        <input type="text" placeholder="Phone number, username, or email" required>
+        <div class="password-container">
+          <input type="password" id="password" placeholder="Password" required>
+          <i class="fa-solid fa-eye toggle-password" onclick="togglePassword()"></i>
+        </div>
+        <button type="submit">Log In</button>
+      </form>
+      <div class="divider"><span>OR</span></div>
+      <div class="fb-login">
+        <i class="fa-brands fa-facebook-square"></i> Log in with Facebook
+      </div>
+      <div class="forgot-password">
+        <a href="#">Forgot password?</a>
+      </div>
+    </div>
+
+    <div class="signup-box">
+      Don't have an account? <a href="#">Sign up</a>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword() {
+      const passwordInput = document.getElementById("password");
+      const toggleIcon = document.querySelector(".toggle-password");
+
+      if (passwordInput.type === "password") {
+        passwordInput.type = "text";
+        toggleIcon.classList.remove("fa-eye");
+        toggleIcon.classList.add("fa-eye-slash");
+      } else {
+        passwordInput.type = "password";
+        toggleIcon.classList.remove("fa-eye-slash");
+        toggleIcon.classList.add("fa-eye");
+      }
+    }
+  </script>
+</body>
+</html>
